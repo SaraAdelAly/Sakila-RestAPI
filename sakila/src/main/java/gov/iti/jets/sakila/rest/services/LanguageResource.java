@@ -9,7 +9,11 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.Link;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriInfo;
 
 import org.modelmapper.ModelMapper;
 
@@ -19,15 +23,19 @@ public class LanguageResource {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public LanguageDto addLanguage(LanguageDto languageDto) {
-        return languageServices.addLanguage(languageDto);
+    public Response addLanguage(LanguageDto languageDto, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(languageServices.addLanguage(languageDto)).link(self.getUri(), "self").build();
+
 
     }
 
     @GET
     @Path("anguageById/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public LanguageDto findLanguageById(@PathParam("id") int languageId) {
-        return languageServices.findLanguageById(languageId);
+    public Response findLanguageById(@PathParam("id") int languageId, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(languageServices.findLanguageById(languageId)).link(self.getUri(), "self").build();
+
     }
 }

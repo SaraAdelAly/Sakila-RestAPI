@@ -7,7 +7,12 @@ import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.Link;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriInfo;
+
 import org.modelmapper.ModelMapper;
 import java.util.List;
 
@@ -18,28 +23,39 @@ public class InventoryResource {
     @GET
     @Path("inventoryByFilm/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<InventoryDto> getInventoriesByFilmId(@PathParam("id") int filmId) {
-        return inventoryServices.getInventoriesByFilmId(filmId);
+    public Response getInventoriesByFilmId(@PathParam("id") int filmId, @Context UriInfo uriInfo) {
+        List<InventoryDto> inventoryDtos = inventoryServices.getInventoriesByFilmId(filmId);
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(inventoryDtos).link(self.getUri(), "self").build();
+
     }
 
     @GET
     @Path("inventoriesNumberByFilm&Store/{storeId}/{filmId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Long groupFilmNumInSameStore(@PathParam("storeId") int storeId, @PathParam("filmId") int filmId) {
-        return inventoryServices.groupFilmNumInSameStore(storeId, filmId);
+    public Response groupFilmNumInSameStore(@PathParam("storeId") int storeId, @PathParam("filmId") int filmId,@Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(inventoryServices.groupFilmNumInSameStore(storeId, filmId)).link(self.getUri(), "self").build();
+
+        
     }
 
     @GET
     @Path("filmExistenceInStoreChecking/{filmId}/{storeId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Boolean checkFilmInStore(@PathParam("filmId") int filmId, @PathParam("storeId") int storeId) {
-        return inventoryServices.checkFilmInStore(filmId, storeId);
+    public Response checkFilmInStore(@PathParam("filmId") int filmId, @PathParam("storeId") int storeId, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(inventoryServices.checkFilmInStore(filmId, storeId)).link(self.getUri(), "self").build();
+
     }
 
     @GET
     @Path("inventoriesByStore/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<InventoryDto> getInventoriesByStoreId(@PathParam("id") int storeId) {
-        return inventoryServices.getInventoriesByStoreId(storeId);
+    public Response getInventoriesByStoreId(@PathParam("id") int storeId, @Context UriInfo uriInfo) {
+        List<InventoryDto> inventoryDtos = inventoryServices.getInventoriesByStoreId(storeId);
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(inventoryDtos).link(self.getUri(), "self").build();
+
     }
 }

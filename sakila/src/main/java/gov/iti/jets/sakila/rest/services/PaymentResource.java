@@ -6,7 +6,11 @@ import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.Link;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriInfo;
 
 import org.modelmapper.ModelMapper;
 
@@ -17,30 +21,38 @@ public class PaymentResource {
     @GET
     @Path("paymentByStaff/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Long countPaymentByStaffId(@PathParam("id") int staffId) {
-        return paymentServices.countPaymentByStaffId(staffId);
+    public Response countPaymentByStaffId(@PathParam("id") int staffId, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(paymentServices.countPaymentByStaffId(staffId)).link(self.getUri(), "self").build();
+
     }
 
     @GET
     @Path("allAmountsByStaff/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Long countPaymentAmountByStaffId(@PathParam("id") int staffId) {
-        return paymentServices.countPaymentAmountByStaffId(staffId);
+    public Response countPaymentAmountByStaffId(@PathParam("id") int staffId, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(paymentServices.countPaymentAmountByStaffId(staffId)).link(self.getUri(), "self").build();
+
     }
 
     @GET
     @Path("allAmountsByStaffNDate/{id}/{year}/{month}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Long countPaymentAmountByStaffINdDate(@PathParam("id") int staffId, @PathParam("year") int year,
-            @PathParam("month") int month) {
-        return paymentServices.countPaymentAmountByStaffINdDate(staffId, year, month);
+    public Response countPaymentAmountByStaffINdDate(@PathParam("id") int staffId, @PathParam("year") int year,
+            @PathParam("month") int month, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(paymentServices.countPaymentAmountByStaffINdDate(staffId, year, month)).link(self.getUri(), "self").build();
+
     }
 
     @GET
     @Path("allpaymentsBycustomer/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Long getCustomerPaymentOperationNum(@PathParam("id") int customerId) {
-        return paymentServices.getCustomerPaymentOperationNum(customerId);
+    public Response getCustomerPaymentOperationNum(@PathParam("id") int customerId, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(paymentServices.getCustomerPaymentOperationNum(customerId)).link(self.getUri(), "self").build();
+
     }
 
 }

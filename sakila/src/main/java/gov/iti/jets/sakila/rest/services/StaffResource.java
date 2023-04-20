@@ -9,7 +9,11 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.Link;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriInfo;
 
 import org.modelmapper.ModelMapper;
 import java.util.List;
@@ -21,21 +25,28 @@ public class StaffResource {
     @GET
     @Path("staffById/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public StaffDto getStaffById(@PathParam("id") int staffId) {
-        return staffServices.getStaffById(staffId);
+    public Response getStaffById(@PathParam("id") int staffId, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(staffServices.getStaffById(staffId)).link(self.getUri(), "self").build();
+
     }
 
     @GET
     @Path("allStaff")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<StaffDto> getAllStaff() {
-        return staffServices.getAllStaff();
+    public Response getAllStaff(@Context UriInfo uriInfo) {
+        List<StaffDto> staffDtos= staffServices.getAllStaff();
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(staffDtos).link(self.getUri(), "self").build();
+
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public StaffDto addStaff(StaffDto staffDto) {
-        return staffServices.addStaff(staffDto);
+    public Response addStaff(StaffDto staffDto, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(staffServices.addStaff(staffDto)).link(self.getUri(), "self").build();
+
     }
 
     @GET

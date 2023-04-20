@@ -10,7 +10,11 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.Link;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriInfo;
 
 import org.modelmapper.ModelMapper;
 
@@ -26,8 +30,11 @@ public class FilmResource {
     @GET
     @Path("actorFilms/{firstName}/{lastName}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<FilmDto> findFilmsByActorName(@PathParam("firstName") String actorFirstName, @PathParam("lastName") String actorLastName) {
-        return filmServices.findFilmsByActorName(actorFirstName,actorLastName);
+    public Response findFilmsByActorName(@PathParam("firstName") String actorFirstName, @PathParam("lastName") String actorLastName,@Context UriInfo uriInfo) {
+        List<FilmDto> filmDtos= filmServices.findFilmsByActorName(actorFirstName,actorLastName);
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(filmDtos).link(self.getUri(), "self").build();
+
     }
     @GET
     @Path("categoryFilms/{name}")
@@ -38,14 +45,18 @@ public class FilmResource {
     @GET
     @Path("filmByTitle/{title}")
     @Produces(MediaType.APPLICATION_JSON)
-    public FilmDto findFilmByTitle(@PathParam("title")String title) {
-        return filmServices.findFilmByTitle(title);
+    public Response findFilmByTitle(@PathParam("title")String title, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(filmServices.findFilmByTitle(title)).link(self.getUri(), "self").build();
+
     }
     @POST
     @Path("newFilm")
     @Consumes(MediaType.APPLICATION_JSON)
-    public FilmDto addFilm (FilmDto filmDto) {
-        return filmServices.addFilm(filmDto);
+    public Response addFilm (FilmDto filmDto, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(filmServices.addFilm(filmDto)).link(self.getUri(), "self").build();
+
     }
     @GET
     @Path("filmRemoving/{id}")
@@ -56,27 +67,35 @@ public class FilmResource {
     @POST
     @Path("filmByLanguage")
     @Consumes(MediaType.APPLICATION_JSON)
-    public List<FilmDto> findFilmByOriginalLanguage(LanguageDto originalLanguageDto) {
-        return filmServices.findFilmByOriginalLanguage(originalLanguageDto);
+    public Response findFilmByOriginalLanguage(LanguageDto originalLanguageDto, @Context UriInfo uriInfo) {
+        List<FilmDto> filmDtos = filmServices.findFilmByOriginalLanguage(originalLanguageDto);
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(filmDtos).link(self.getUri(), "self").build();
+
     }
     @GET
     @Path("filmByCategoryId/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Long countFilmsSameCategory (@PathParam("id") int categoryId) {
-
-        return filmServices.countFilmsSameCategory(categoryId);
+    public Response countFilmsSameCategory (@PathParam("id") int categoryId, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(filmServices.countFilmsSameCategory(categoryId)).link(self.getUri(), "self").build();
     }
+
     @GET
     @Path("filmsByLanguages/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<FilmDto> findFilmsByLanguageId(@PathParam("id") int languageId) {
-        return filmServices.findFilmsByLanguageId(languageId);
+    public Response findFilmsByLanguageId(@PathParam("id") int languageId, @Context UriInfo uriInfo) {
+        List<FilmDto> filmDtos = filmServices.findFilmsByLanguageId(languageId);
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(filmDtos).link(self.getUri(), "self").build();
+
     }
 
     @GET
     @Path("filmById/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public FilmDto findFilmById(@PathParam("id") Integer id) {
-        return filmServices.findFilmById(id);
+    public Response findFilmById(@PathParam("id") Integer id, @Context UriInfo uriInfo) {
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()).rel("self").build();
+        return Response.ok(filmServices.findFilmById(id)).link(self.getUri(), "self").build();
     }
 }
