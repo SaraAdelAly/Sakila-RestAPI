@@ -1,0 +1,17 @@
+POST http://localhost:8888/sakila/ws/film HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://services.soap.sakila.jets.iti.gov/">
+    <soap:Body>
+        <jets:actorFilms>
+            <filmTitle>
+                PENELOPE
+            </filmTitle>
+            <actorLastName>
+                GUINESS
+            </actorLastName>
+        </jets:actorFilms>
+    </soap:Body>
+</soap:Envelope>

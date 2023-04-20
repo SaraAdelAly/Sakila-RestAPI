@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3dfdb0fb-97ec-4365-991f-18dc0444840f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/ActorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/AddressDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/CategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/FilmDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/FilmIteratorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/InventoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/LanguageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/PaymentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/RatingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/RentalDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/StaffDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/dao/StoreDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/ActorInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/CustomerInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/FilmInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/FilmIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/InventoryInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/LaguageInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/PaymentInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/RentalInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/StaffInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/daoInterface/StoreInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/AddressServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/PaymentServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/StaffServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/ActorWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/AddressWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/CategoryWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/CustomerWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/FilmWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/InventoryWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/LanguageWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/PaymentWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/RentalWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/StaffWebServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/soap/services/StoreWebServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/ActorDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/AddressDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/CategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/CustomerDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/FilmDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/FilmIteratorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/InventoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/LanguageDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/PaymentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/RatingDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/RentalDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dao/StoreDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/ActorInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/CustomerInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/FilmInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/FilmIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/InventoryInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/LaguageInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/PaymentInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/RentalInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/daoInterface/StoreInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dto/FilmTextDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/dto/FilmTextDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/FilmActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/FilmActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/FilmActorId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/FilmActorId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/FilmCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/FilmCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/FilmCategoryId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/FilmCategoryId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/FilmText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/FilmText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/entities/enums/RatingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/persistance/entities/enums/RatingType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/ActorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/ActorServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/CategoryServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/CustomerMappper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/CustomerServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/FilmMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/FilmServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/InventoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/InventoryServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/LanguageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/LanguageServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/RentalMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/RentalServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/mappers/StoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/StoreServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/ActorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/iti/jets/sakila/services/FilmService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/ActorDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/AddressDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/CategoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/CustomerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/FilmDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/FilmIteratorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/InventoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/LanguageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/PaymentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/RatingDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/RentalDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dao/StoreDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/ActorInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/CustomerInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/FilmInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/FilmIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/InventoryInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/LaguageInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/PaymentInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/RentalInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/daoInterface/StoreInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/ActorDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/ActorDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/AddressDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/AddressDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CategoryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CategoryDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CityDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CityDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CountryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CountryDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CustomerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/CustomerDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmActorDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmActorDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmActorIdDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmActorIdDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmCategoryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmCategoryDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmCategoryIdDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmCategoryIdDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmTextDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/FilmTextDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/InventoryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/InventoryDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/LanguageDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/LanguageDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/PaymentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/PaymentDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/RentalDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/RentalDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/StaffDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/StaffDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/StoreDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/dto/StoreDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Film.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/FilmActor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/FilmActorId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/FilmCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/FilmCategoryId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/FilmText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Inventory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Language.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Rating.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Rental.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/entities/enums/RatingType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/ActorMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/CustomerMappper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/FilmMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/InventoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/LanguageMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/RentalMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/mappers/StoreMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/services/ActorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/services/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/iti/jets/sakila/services/FilmService.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Oa6k1h0yAM0MoRZavAER578DGk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dfdb0fb-97ec-4365-991f-18dc0444840f" name="Changes" comment="" />
+      <created>1681786486921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681786486921</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
